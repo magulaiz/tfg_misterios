@@ -1,0 +1,76 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=3cm]{geometry}
+\usepackage[hidelinks, breaklinks=true, bookmarks=true]{hyperref}
+\usepackage{bookmark}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{indentfirst}
+\usepackage{dirtytalk}
+\usepackage[bottom]{footmisc}
+\usepackage{footnote}
+\makesavenoteenv{figure}
+\usepackage[spanish]{babel}
+\usepackage[style=iso-authoryear]{biblatex}
+\setlength{\parskip}{2mm}
+\addbibresource{TFG.bib} %Import the bibliography file
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\author{Eva Gutiérrez Monteira}
+\title{Los misterios eleusinos y los misterios de Samotracia}
+\date{2025}
+\renewcommand{\chaptername}{}
+
+\frontmatter
+
+\begin{titlepage}
+	\centering
+	{\Large Eva Gutiérrez Monteira \par}
+	\vspace{1cm}
+	{\scshape\large LOS MISTERIOS ELEUSINOS Y LOS MISTERIOS DE SAMOTRACIA: \par}
+	{\scshape\large ESTUDIO COMPARATIVO \par}
+	\vspace{2cm}
+	{\scshape\Large Trabajo Fin de Grado \par}
+	\vfill
+	{\large Dirigido por el Dr. Jesús Carruesco García \par}
+	{\large Grado en Historia del Arte y Arqueología \par}
+	\vspace{2cm}
+	{\includegraphics[width=0.5\textwidth]{logo}\par}
+	\vfill	
+	{\small Tarragona \par}	
+	{\small 2025 \par}
+	\vfill	
+	\end{titlepage}
+\include{TeX_files/00-Resumen.tex}
+
+\tableofcontents{}
+
+\begin{figure}[p]
+	\includegraphics[width=1\linewidth]{Imagenes/MapaGreciaAntigua}
+	\centering{\textbf{Mapa de Grecia Antigua}}
+\end{figure}
+
+\mainmatter
+
+
+\include{TeX_files/01-Introduccion.tex}
+
+\include{TeX_files/02-MisteriosEleusinos.tex}
+
+\include{TeX_files/03-MisteriosDeSamotracia.tex}
+
+\include{TeX_files/04-AnalisisComparativo.tex}
+
+\include{TeX_files/05-Conclusión.tex}
+
+\backmatter
+
+\printbibliography[heading=bibintoc, title={Bibliografía}]
+
+\include{TeX_files/07-Anexo.tex}
+
+\end{document}
